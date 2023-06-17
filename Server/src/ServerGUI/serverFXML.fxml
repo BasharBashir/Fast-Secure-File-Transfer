@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="639.0" prefWidth="795.0" style="-fx-background-color: #555555;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Server.ServerPortFrameController">
+   <children>
+      <ImageView fitHeight="639.0" fitWidth="795.0">
+         <image>
+            <Image url="icons/background.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="198.0" fitWidth="264.0" layoutX="239.0" layoutY="-40.0">
+         <image>
+            <Image url="icons/fsft.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tableServer" layoutX="24.0" layoutY="158.0" prefHeight="191.0" prefWidth="520.0">
+        <columns>
+          <TableColumn fx:id="colHostName" prefWidth="164.0" text="Guest Name" />
+          <TableColumn fx:id="colIP" prefWidth="182.0" text="IP" />
+            <TableColumn fx:id="colStatus" prefWidth="173.0" text="Status" />
+        </columns>
+      </TableView>
+      <Label layoutX="214.0" layoutY="92.0" prefHeight="40.0" prefWidth="330.0" text="Fast Secure File Transfer" textFill="#e8b339">
+         <font>
+            <Font name="Baskerville Old Face" size="28.0" />
+         </font>
+      </Label>
+      <Button fx:id="extebt" layoutX="586.0" layoutY="586.0" mnemonicParsing="false" onAction="#getExitBtn" prefHeight="39.0" prefWidth="162.0" style="-fx-background-color: red;" text="Exit" textFill="WHITE">
+         <font>
+            <Font name="Audiowide" size="16.0" />
+         </font></Button>
+      <Button fx:id="startserverbt" layoutX="17.0" layoutY="586.0" mnemonicParsing="false" onAction="#startServerBtn" prefHeight="39.0" prefWidth="162.0" style="-fx-background-color: #4754a2;" text="Start Server" textFill="WHITE">
+         <font>
+            <Font name="Audiowide" size="16.0" />
+         </font></Button>
+      <TextField fx:id="serverip" layoutX="92.0" layoutY="44.0" prefHeight="31.0" prefWidth="162.0" promptText="Server IP" />
+      <Label layoutX="3.0" layoutY="49.0" prefHeight="21.0" prefWidth="95.0" text="Server IP" textFill="#eb8b00">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Text fx:id="startText" fill="#09e80c" layoutX="207.0" layoutY="611.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="343.6708984375">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <TableView fx:id="filetableview" layoutX="26.0" layoutY="389.0" prefHeight="177.0" prefWidth="324.0">
+        <columns>
+          <TableColumn fx:id="filename" prefWidth="186.0" text="File Name" />
+          <TableColumn fx:id="chunksnumber" prefWidth="137.0" text="Chumks Number" />
+        </columns>
+      </TableView>
+      <Text fill="#eb8b00" layoutX="26.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IP files:" wrappingWidth="336.6708984375">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
