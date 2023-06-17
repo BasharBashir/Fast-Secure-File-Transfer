@@ -20,9 +20,13 @@ To enable the server to listen for incoming client connections, you need to run 
 ![4444](https://github.com/BasharBashir/Fast-Secure-File-Transfer/assets/95254660/a5b59b36-6f89-4ef9-822e-f2300328585c)
 
 1)The IP address of the server .
+
 2)An information table that presents a consolidated view of all connected clients.
+
 3)After double-clicking an IP address in the table, a list of all files existing on that IP address will be displayed.
+
 4)The text displays the port number of the server's socket.
+
 ![5555](https://github.com/BasharBashir/Fast-Secure-File-Transfer/assets/95254660/76bd25d8-5765-4615-967c-f88e728e9f70)
 
 Client:
@@ -36,8 +40,11 @@ This is the main page of the client application, where you will find two options
 ![7777](https://github.com/BasharBashir/Fast-Secure-File-Transfer/assets/95254660/5acb8769-0c5d-45e2-80b1-2b09eae87bc6)
 
 1)Selecting the "Share" option, you can share files with other clients .
+
 2)Choosing the "Request File" option enables you to request files from other clients .
+
 3)The table displays all the files that exist in the client's storage.
+
 4)Exit button.
 
 
