@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.ClientPage">
+	<children>
+		<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #555555;">
+			<children>
+            <ImageView fitHeight="600.0" fitWidth="800.0">
+               <image>
+                  <Image url="icons/background.jpeg" />
+               </image>
+            </ImageView>
+				<Text fill="#e8b339" fontSmoothingType="LCD" layoutX="284.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fast Secure File Transfer" wrappingWidth="453.41845703125">
+					<font>
+						<Font name="Bell MT Bold" size="39.0" />
+					</font>
+				</Text>
+				<Button layoutX="377.0" layoutY="156.0" mnemonicParsing="false" onAction="#request" prefHeight="53.0" prefWidth="292.0" style="-fx-background-color: green;" styleClass="button-submit" stylesheets="@Buttons.css" text="Request File" textFill="WHITE">
+					<font>
+						<Font name="Berlin Sans FB" size="22.0" />
+					</font>
+					<effect>
+						<InnerShadow color="#727272" />
+					</effect>
+				</Button>
+				<Text fx:id="statustext" fill="#d31717" layoutX="278.0" layoutY="555.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="465.6708984375">
+					<font>
+						<Font name="System Bold" size="23.0" />
+					</font>
+				</Text>
+            <AnchorPane layoutX="-3.0" prefHeight="600.0" prefWidth="253.0" style="-fx-background-color: BLACK;">
+               <children>
+      				<Button layoutX="14.0" layoutY="507.0" mnemonicParsing="false" onAction="#ExitBt" prefHeight="65.0" prefWidth="91.0" style="-fx-background-color: black;">
+      					<graphic>
+      						<ImageView fitHeight="61.0" fitWidth="71.0">
+      							<image>
+      								<Image url="icons/transparent-login-icon-5f7f2e33d68176.2854977916021704198786.png" />
+      							</image>
+      						</ImageView>
+      					</graphic>
+      				</Button>
+                  <ImageView fitHeight="194.0" fitWidth="200.0" layoutX="27.0" layoutY="14.0">
+                     <image>
+                        <Image url="icons/fsftNEW.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Button layoutX="377.0" layoutY="227.0" mnemonicParsing="false" onAction="#share" prefHeight="53.0" prefWidth="292.0" style="-fx-background-color: green;" styleClass="button-submit" stylesheets="@Buttons.css" text="Share File" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="22.0" />
+               </font>
+            </Button>
+            <ListView fx:id="fileslist" layoutX="383.0" layoutY="359.0" prefHeight="155.0" prefWidth="292.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </ListView>
+            <Text fill="#e8b339" layoutX="383.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client files:" wrappingWidth="218.51171875">
+               <font>
+                  <Font name="Bell MT Bold" size="24.0" />
+               </font>
+            </Text>
+			</children>
+		</AnchorPane>
+	</children>
+</AnchorPane>

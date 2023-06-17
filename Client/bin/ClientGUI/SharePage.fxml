@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #555555;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.SharePage">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" layoutY="-1.0">
+         <image>
+            <Image url="icons/background.jpeg" />
+         </image>
+      </ImageView>
+      <Text fill="#e8b339" fontSmoothingType="LCD" layoutX="288.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" File Transfer" wrappingWidth="453.41845703125">
+         <font>
+            <Font name="Bell MT Bold" size="39.0" />
+         </font>
+      </Text>
+      <Text fx:id="statustext" fill="#e8b339" layoutX="126.0" layoutY="482.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="481.6708984375">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Text>
+      <Button fx:id="shareB" layoutX="602.0" layoutY="542.0" mnemonicParsing="false" onAction="#shareB" prefHeight="40.0" prefWidth="188.0" style="-fx-background-color: green;" styleClass="button-submit" stylesheets="@Buttons.css" text="Share file" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="22.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="114.0" fitWidth="174.0" layoutX="328.0" layoutY="35.0">
+         <image>
+            <Image url="icons/fsftNEW.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="backB" layoutX="54.0" layoutY="542.0" mnemonicParsing="false" onAction="#backB" prefHeight="40.0" prefWidth="188.0" style="-fx-background-color: red;" styleClass="button-submit" stylesheets="@Buttons.css" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="22.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="91.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select file">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Button fx:id="selectB" layoutX="639.0" layoutY="240.0" mnemonicParsing="false" onAction="#selectB" prefHeight="31.0" prefWidth="66.0" text="Select" />
+      <TextField fx:id="filepath" layoutX="91.0" layoutY="240.0" prefHeight="31.0" prefWidth="527.0" promptText="File path" />
+      <Text fill="WHITE" layoutX="91.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="File size :" wrappingWidth="92.1845703125">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text fx:id="sizeText" fill="WHITE" layoutX="178.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="145.18456745147705">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text fx:id="divdetext" fill="WHITE" layoutX="91.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Division type:" wrappingWidth="384.1845703125">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="CclientsCheck" layoutX="91.0" layoutY="366.0" mnemonicParsing="false" text="Connected clients" textFill="WHITE" />
+      <CheckBox fx:id="GnumberCheck" layoutX="274.0" layoutY="366.0" mnemonicParsing="false" text="My choice" textFill="WHITE" />
+      <TextField fx:id="numberchunks" layoutX="283.0" layoutY="396.0" promptText="Enter number" />
+   </children>
+</AnchorPane>

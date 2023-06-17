@@ -1,0 +1,23 @@
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color : #D7D6DC;
+    -fx-border-radius: 30,30,30,30;
+    -fx-background-insets: -0.2, 1, -1.4, 3;
+    -fx-background-radius: 30,30,30,30;
+    -fx-padding: 4 7 4 15 ;
+    -fx-prompt-text-fill: derive(-fx-control-inner-background,-30%);
+}
+
+.text-field:focused {
+    -fx-border-color : blue;
+    -fx-prompt-text-fill: black; /*Yellow - floating label*/
+    -fx-prompt-text-transform: uppercase;
+    -fx-prompt-text-padding: 0em 20em 0em 1em;
+  -fx-prompt-text-letter-spacing: 0.05em;
+    
+     -fx-border-radius: 30,30,30,30;
+    -fx-background-color: white;
+    -fx-background-insets: -0.2, 1, -1.4, 3;
+    -fx-background-radius: 30,30,30,30;
+    -fx-padding: 4 7 4 15 ;
+}
