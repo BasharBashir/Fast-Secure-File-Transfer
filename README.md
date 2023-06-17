@@ -5,10 +5,10 @@ This project presents the development of a new file transfer application that us
 1)To run the application, you will need to download the JavaFX library and add it to the build path of your clients and server. Start by obtaining the JavaFX library from the official Oracle website or a suitable repository.
  After downloading JavaFX, extract the contents of the library to a preferred location on your computer. Next, open the Eclipse IDE 2020 and create a new Java project for your application.
  
-2) Configure the build path by right-clicking on the project in the Project Explorer, selecting "Build Path," and then "Configure Build Path." In the Libraries tab of the Configure Build Path window, click on "Add External JARs" or "Add Library" (depending on your Eclipse version).
+2)Configure the build path by right-clicking on the project in the Project Explorer, selecting "Build Path," and then "Configure Build Path." In the Libraries tab of the Configure Build Path window, click on "Add External JARs" or "Add Library" (depending on your Eclipse version).
  Navigate to the location where you extracted the JavaFX library, select the appropriate JAR files, and add them to the build path of your project. Additionally, you will need to set up the JavaFX runtime in Eclipse.
 
 3)Go to the Run Configurations of your Eclipse project  Access the Arguments tab. In the VM arguments section ,add the following line, replacing the path with the actual location of the JavaFX runtime on your system:
---module-path /path/to/javafx-sdk-VERSION/lib --add-modules javafx.controls,javafx.fxml
+                    --module-path /path/to/javafx-sdk-VERSION/lib --add-modules javafx.controls,javafx.fxml
 
 
